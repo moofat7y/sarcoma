@@ -1,0 +1,28 @@
+$secondary: #7bb4e3;
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.navbar {
+  .nav-link {
+    position: relative;
+    transition: 0.3s ease-in-out;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin: 0px 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: unset;
+      height: 2px;
+      right: 0px;
+      width: 0px;
+      transition: 0.3s ease-in-out;
+      background-color: $secondary;
+    }
+    &.active::before,
+    &:hover::before {
+      width: 100%;
+      left: 0px;
+    }
+  }
+}
