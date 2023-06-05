@@ -12032,6 +12032,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
 .navbar .nav-link {
   position: relative;
   transition: 0.3s ease-in-out;

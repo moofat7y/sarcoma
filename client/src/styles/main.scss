@@ -1,6 +1,11 @@
 $secondary: #7bb4e3;
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+body {
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+}
 .navbar {
   .nav-link {
     position: relative;
