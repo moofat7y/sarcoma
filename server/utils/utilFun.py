@@ -14,4 +14,5 @@ def read_file_as_image(data) -> np.ndarray:
     img = np.expand_dims(img, axis=0)
     return img
 
+
 sys.modules[read_file_as_image]= {read_file_as_image}

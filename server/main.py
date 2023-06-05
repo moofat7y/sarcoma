@@ -4,8 +4,12 @@ from tensorflow.keras import models
 import uvicorn
 from utils.utilFun import read_file_as_image
 app = FastAPI()
-MODEL = models.load_model('server\model1.h5')
+
+
+MODEL = models.load_model('model1.h5')
+
 CLASS_NAME = ['Not effected','Effected']
+
 
 origins = ["http://localhost:5173","http://localhost:5174"]
 app.add_middleware(CORSMiddleware,allow_origins=origins,allow_credentials=True,allow_methods=['*'],allow_headers=['*'])
