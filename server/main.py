@@ -4,7 +4,7 @@ from tensorflow.keras import models
 import uvicorn
 from utils.utilFun import read_file_as_image
 app = FastAPI()
-MODEL = models.load_model(r'D:\Projects\Full Stack\sarcoma\server\saved_models\model1.h5')
+MODEL = models.load_model(r'server\saved_models\model1.h5')
 CLASS_NAME = ['Not effected','Effected']
 
 origins = ["http://localhost:5173","http://localhost:5174"]
