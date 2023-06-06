@@ -26,7 +26,7 @@ const Uploader = () => {
     try {
       setIsLoading(true);
       const response = await axios.post(
-        "https://sarcoma.onrender.com/predict",
+        "http://localhost:8000/predict",
         formData
       );
       setIsLoading(false);
