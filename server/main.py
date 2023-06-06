@@ -11,7 +11,7 @@ MODEL = models.load_model('model1.h5')
 CLASS_NAME = ['Not effected','Effected']
 
 
-origins = ["http://localhost:5173","http://localhost:5174","https://sarcoma.vercel.app/"]
+origins = ["http://localhost:5173","http://localhost:5174","https://sarcoma.vercel.app"]
 app.add_middleware(CORSMiddleware,allow_origins=origins,allow_credentials=True,allow_methods=['*'],allow_headers=['*'])
 
 
