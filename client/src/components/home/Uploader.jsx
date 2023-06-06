@@ -26,7 +26,7 @@ const Uploader = () => {
     try {
       setIsLoading(true);
       const response = await axios.post(
-        "http://localhost:8000/predict",
+        "https://sarcoma.onrender.com/predict",
         formData
       );
       setIsLoading(false);
@@ -68,7 +68,7 @@ const Uploader = () => {
             </p>
             <p>
               <span className="text-secondary">Confidence :</span>{" "}
-              {response.Confidence + "%"}
+              {response.Confidence}
             </p>
           </div>
         ) : null}
